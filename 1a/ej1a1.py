@@ -41,6 +41,10 @@ Exemple:
 
 def fibonacci(fibonacci_number):
     # Write here your code
+    if not isinstance(fibonacci_number, int):
+        raise ValueError("Introducir un valor numérico")
+    if fibonacci_number < 0:
+         raise ValueError("Introducir un valor superior a 0")
     a, b = 0, 1
     for i in range(fibonacci_number):
         a, b = b, a+b
