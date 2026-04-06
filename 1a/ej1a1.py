@@ -41,7 +41,10 @@ Exemple:
 
 def fibonacci(fibonacci_number):
     # Write here your code
-    pass
+    a, b = 0, 1
+    for i in range(fibonacci_number):
+        a, b = b, a+b
+    return a
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
